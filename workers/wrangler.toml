@@ -1,0 +1,12 @@
+name = "gatekeeper-agent-games"
+main = "worker.mjs"
+compatibility_date = "2026-11-15"
+compatibility_flags = ["nodejs_compat"]
+
+# Deploy (API, no wrangler login needed):
+#   python3 ~/workspace/custom-connectors/custom.cloudflare/bin/deploy_worker.py \
+#     <account_id> gatekeeper-agent-games worker.mjs
+# Set the real HMAC secret AFTER agent registration (dashboard):
+#   wrangler secret put AGENT_HMAC_SECRET
+#   (or PUT /client/v4/accounts/<id>/workers/scripts/gatekeeper-agent-games/secrets)
+# Until then the worker runs in simulation mode (health: hmac=false).
