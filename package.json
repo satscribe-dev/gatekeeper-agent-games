@@ -1,0 +1,17 @@
+{
+  "name": "agent-games-proof-gatekeeper",
+  "version": "0.1.0",
+  "description": "Proof Gatekeeper agent for zkVerify Agent Games — HMAC endpoint, field-level trap checks, fail-closed decisions.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "simulate": "node test/simulate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "snarkjs": "^0.7.5"
+  }
+}
